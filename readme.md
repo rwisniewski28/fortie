@@ -9,10 +9,10 @@ A simple [Fortnox](https://www.fortnox.se/) PHP package, including Laravel Servi
 The easiest way to install this package is through Composer.
 
 ```
-composer require Rwis/fortie dev-master
+composer require rwis/fortie dev-master
 ```
 
-Or add `"Rwis/fortie": "dev-master"` to your `composer.json`.
+Or add `"rwis/fortie": "dev-master"` to your `composer.json`.
 
 If you don't have Composer you should [install it](https://getcomposer.org/download/).
 
