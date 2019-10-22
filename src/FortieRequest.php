@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie;
+<?php namespace Rwis\Fortie;
 
 /*
 
@@ -18,7 +18,7 @@
 
 */
 
-use Wetcat\Fortie\BaseProvider;
+use Rwis\Fortie\BaseProvider;
 
 class FortieRequest
 {

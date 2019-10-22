@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\Vouchers;
+<?php namespace Rwis\Fortie\Providers\Vouchers;
 
 /*
 
@@ -18,8 +18,8 @@
 
 */
 
-use Wetcat\Fortie\Providers\ProviderBase;
-use Wetcat\Fortie\FortieRequest;
+use Rwis\Fortie\Providers\ProviderBase;
+use Rwis\Fortie\FortieRequest;
 
 class Provider extends ProviderBase {
 

@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie;
+<?php namespace Rwis\Fortie;
 
 /*
 
@@ -18,37 +18,37 @@
 
 */
 
-use Wetcat\Fortie\Providers\AbsenceTransactions\Provider as AbsenceTransactionsProvider;
-use Wetcat\Fortie\Providers\AccountCharts\Provider as AccountChartsProvider;
-use Wetcat\Fortie\Providers\Accounts\Provider as AccountsProvider;
-use Wetcat\Fortie\Providers\Archive\Provider as ArchiveProvider;
-use Wetcat\Fortie\Providers\ArticleFileConnections\Provider as ArticleFileConnectionsProvider;
-use Wetcat\Fortie\Providers\ArticleUrlConnections\Provider as ArticleUrlConnectionsProvider;
-use Wetcat\Fortie\Providers\Articles\Provider as ArticlesProvider;
-use Wetcat\Fortie\Providers\AttendanceTransactions\Provider as AttendanceTransactionsProvider;
-use Wetcat\Fortie\Providers\CompanySettings\Provider as CompanySettingsProvider;
-use Wetcat\Fortie\Providers\ContractAccruals\Provider as ContractAccrualsProvider;
-use Wetcat\Fortie\Providers\ContractTemplates\Provider as ContractTemplatesProvider;
-use Wetcat\Fortie\Providers\Contracts\Provider as ContractsProvider;
-use Wetcat\Fortie\Providers\CostCenters\Provider as CostCentersProvider;
-use Wetcat\Fortie\Providers\Currencies\Provider as CurrenciesProvider;
-use Wetcat\Fortie\Providers\Customers\Provider as CustomersProvider;
-use Wetcat\Fortie\Providers\Employees\Provider as EmployeesProvider;
-use Wetcat\Fortie\Providers\FinancialYears\Provider as FinancialYearsProvider;
-use Wetcat\Fortie\Providers\Inbox\Provider as InboxProvider;
-use Wetcat\Fortie\Providers\InvoiceAccruals\Provider as InvoiceAccrualsProvider;
-use Wetcat\Fortie\Providers\InvoicePayments\Provider as InvoicePaymentsProvider;
-use Wetcat\Fortie\Providers\Invoices\Provider as InvoicesProvider;
-use Wetcat\Fortie\Providers\Labels\Provider as LabelsProvider;
-use Wetcat\Fortie\Providers\LockedPeriod\Provider as LockedPeriodProvider;
-use Wetcat\Fortie\Providers\ModesOfPayments\Provider as ModesOfPaymentsProvider;
-use Wetcat\Fortie\Providers\Offers\Provider as OffersProvider;
-use Wetcat\Fortie\Providers\Orders\Provider as OrdersProvider;
-use Wetcat\Fortie\Providers\PredefinedAccounts\Provider as PredefinedAccountsProvider;
-use Wetcat\Fortie\Providers\PredefinedVoucherSeries\Provider as PredefinedVoucherSeriesProvider;
-use Wetcat\Fortie\Providers\PriceLists\Provider as PriceListsProvider;
-use Wetcat\Fortie\Providers\Prices\Provider as PricesProvider;
-use Wetcat\Fortie\Providers\PrintTemplates\Provider as PrintTemplatesProvider;
+use Rwis\Fortie\Providers\AbsenceTransactions\Provider as AbsenceTransactionsProvider;
+use Rwis\Fortie\Providers\AccountCharts\Provider as AccountChartsProvider;
+use Rwis\Fortie\Providers\Accounts\Provider as AccountsProvider;
+use Rwis\Fortie\Providers\Archive\Provider as ArchiveProvider;
+use Rwis\Fortie\Providers\ArticleFileConnections\Provider as ArticleFileConnectionsProvider;
+use Rwis\Fortie\Providers\ArticleUrlConnections\Provider as ArticleUrlConnectionsProvider;
+use Rwis\Fortie\Providers\Articles\Provider as ArticlesProvider;
+use Rwis\Fortie\Providers\AttendanceTransactions\Provider as AttendanceTransactionsProvider;
+use Rwis\Fortie\Providers\CompanySettings\Provider as CompanySettingsProvider;
+use Rwis\Fortie\Providers\ContractAccruals\Provider as ContractAccrualsProvider;
+use Rwis\Fortie\Providers\ContractTemplates\Provider as ContractTemplatesProvider;
+use Rwis\Fortie\Providers\Contracts\Provider as ContractsProvider;
+use Rwis\Fortie\Providers\CostCenters\Provider as CostCentersProvider;
+use Rwis\Fortie\Providers\Currencies\Provider as CurrenciesProvider;
+use Rwis\Fortie\Providers\Customers\Provider as CustomersProvider;
+use Rwis\Fortie\Providers\Employees\Provider as EmployeesProvider;
+use Rwis\Fortie\Providers\FinancialYears\Provider as FinancialYearsProvider;
+use Rwis\Fortie\Providers\Inbox\Provider as InboxProvider;
+use Rwis\Fortie\Providers\InvoiceAccruals\Provider as InvoiceAccrualsProvider;
+use Rwis\Fortie\Providers\InvoicePayments\Provider as InvoicePaymentsProvider;
+use Rwis\Fortie\Providers\Invoices\Provider as InvoicesProvider;
+use Rwis\Fortie\Providers\Labels\Provider as LabelsProvider;
+use Rwis\Fortie\Providers\LockedPeriod\Provider as LockedPeriodProvider;
+use Rwis\Fortie\Providers\ModesOfPayments\Provider as ModesOfPaymentsProvider;
+use Rwis\Fortie\Providers\Offers\Provider as OffersProvider;
+use Rwis\Fortie\Providers\Orders\Provider as OrdersProvider;
+use Rwis\Fortie\Providers\PredefinedAccounts\Provider as PredefinedAccountsProvider;
+use Rwis\Fortie\Providers\PredefinedVoucherSeries\Provider as PredefinedVoucherSeriesProvider;
+use Rwis\Fortie\Providers\PriceLists\Provider as PriceListsProvider;
+use Rwis\Fortie\Providers\Prices\Provider as PricesProvider;
+use Rwis\Fortie\Providers\PrintTemplates\Provider as PrintTemplatesProvider;
 use Wetcat\Fortie\Providers\Projects\Provider as ProjectsProvider;
 use Wetcat\Fortie\Providers\SalaryTransactions\Provider as SalaryTransactionsProvider;
 use Wetcat\Fortie\Providers\ScheduleTimes\Provider as ScheduleTimesProvider;

@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers;
+<?php namespace Rwis\Fortie\Providers;
 
 /*
 
@@ -19,9 +19,9 @@
 */
 
 
-use Wetcat\Fortie\Exceptions\MissingRequiredAttributeException;
-use Wetcat\Fortie\Exceptions\FortnoxException;
-use Wetcat\Fortie\FortieRequest;
+use Rwis\Fortie\Exceptions\MissingRequiredAttributeException;
+use Rwis\Fortie\Exceptions\FortnoxException;
+use Rwis\Fortie\FortieRequest;
 
 
 /**

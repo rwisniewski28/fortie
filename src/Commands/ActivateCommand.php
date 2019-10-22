@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Commands;
+<?php namespace Rwis\Fortie\Commands;
 
 /*
 

@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Wetcat\\Fortie\\": "src"
+      "Rwis\\Fortie\\": "src"
     }
   }
 }

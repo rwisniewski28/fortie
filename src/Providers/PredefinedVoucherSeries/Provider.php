@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\PredefinedVoucherSeries;
+<?php namespace Rwis\Fortie\Providers\PredefinedVoucherSeries;
 
 /*
 

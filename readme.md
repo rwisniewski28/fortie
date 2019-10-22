@@ -9,10 +9,10 @@ A simple [Fortnox](https://www.fortnox.se/) PHP package, including Laravel Servi
 The easiest way to install this package is through Composer.
 
 ```
-composer require wetcat/fortie dev-master
+composer require Rwis/fortie dev-master
 ```
 
-Or add `"wetcat/fortie": "dev-master"` to your `composer.json`.
+Or add `"Rwis/fortie": "dev-master"` to your `composer.json`.
 
 If you don't have Composer you should [install it](https://getcomposer.org/download/).
 
@@ -31,7 +31,7 @@ return [
 
         ...
 
-        Wetcat\Fortie\FortieServiceProvider::class,
+        Rwis\Fortie\FortieServiceProvider::class,
 
     ],
 
@@ -43,7 +43,7 @@ return [
 
 ## Configuration
 
-In Laravel you can publish the config file with `php artisan vendor:publish --provider="Wetcat\Fortie\FortieServiceProvider" --tag="config"`, after this the file should be available in `app/fortie.php`. Use the details provided by Fortnox when you signed up.
+In Laravel you can publish the config file with `php artisan vendor:publish --provider="Rwis\Fortie\FortieServiceProvider" --tag="config"`, after this the file should be available in `app/fortie.php`. Use the details provided by Fortnox when you signed up.
 
 The **Access Token** is not provided when signing up, you need to get that seperately using your **Auth Code** and **Client Secret**. Read more about this process [here](http://developer.fortnox.se/documentation/general/authentication/).
 
@@ -86,7 +86,7 @@ When you've included the Service Provider you can then use dependency injection 
 
 [...]
 
-use Wetcat\Fortie\Fortie;
+use Rwis\Fortie\Fortie;
 
 abstract class Controller extends BaseController
 {
@@ -129,7 +129,7 @@ Of course you can also inject Fortie into any Laravel controller method to limit
 
 [...]
 
-use Wetcat\Fortie\Fortie;
+use Rwis\Fortie\Fortie;
 
 class MyController extends Controller
 {

@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\TaxReductions;
+<?php namespace Rwis\Fortie\Providers\TaxReductions;
 
 /*
 
