@@ -49,24 +49,24 @@ use Rwis\Fortie\Providers\PredefinedVoucherSeries\Provider as PredefinedVoucherS
 use Rwis\Fortie\Providers\PriceLists\Provider as PriceListsProvider;
 use Rwis\Fortie\Providers\Prices\Provider as PricesProvider;
 use Rwis\Fortie\Providers\PrintTemplates\Provider as PrintTemplatesProvider;
-use Wetcat\Fortie\Providers\Projects\Provider as ProjectsProvider;
-use Wetcat\Fortie\Providers\SalaryTransactions\Provider as SalaryTransactionsProvider;
-use Wetcat\Fortie\Providers\ScheduleTimes\Provider as ScheduleTimesProvider;
-use Wetcat\Fortie\Providers\SupplierInvoiceAccruals\Provider as SupplierInvoiceAccrualsProvider;
-use Wetcat\Fortie\Providers\SupplierInvoiceExternalURLConnections\Provider as SupplierInvoiceExternalURLConnectionsProvider;
-use Wetcat\Fortie\Providers\SupplierInvoiceFileConnections\Provider as SupplierInvoiceFileConnectionsProvider;
-use Wetcat\Fortie\Providers\SupplierInvoicePayments\Provider as SupplierInvoicePaymentsProvider;
-use Wetcat\Fortie\Providers\SupplierInvoices\Provider as SupplierInvoicesProvider;
-use Wetcat\Fortie\Providers\Suppliers\Provider as SuppliersProvider;
-use Wetcat\Fortie\Providers\TaxReductions\Provider as TaxReductionsProvider;
-use Wetcat\Fortie\Providers\TermsOfDeliveries\Provider as TermsOfDeliveriesProvider;
-use Wetcat\Fortie\Providers\TermsOfPayments\Provider as TermsOfPaymentsProvider;
-use Wetcat\Fortie\Providers\TrustedEmailSenders\Provider as TrustedEmailSendersProvider;
-use Wetcat\Fortie\Providers\Units\Provider as UnitsProvider;
-use Wetcat\Fortie\Providers\VoucherFileConnections\Provider as VoucherFileConnectionsProvider;
-use Wetcat\Fortie\Providers\VoucherSeries\Provider as VoucherSeriesProvider;
-use Wetcat\Fortie\Providers\Vouchers\Provider as VouchersProvider;
-use Wetcat\Fortie\Providers\WayOfDeliveries\Provider as WayOfDeliveriesProvider;
+use Rwis\Fortie\Providers\Projects\Provider as ProjectsProvider;
+use Rwis\Fortie\Providers\SalaryTransactions\Provider as SalaryTransactionsProvider;
+use Rwis\Fortie\Providers\ScheduleTimes\Provider as ScheduleTimesProvider;
+use Rwis\Fortie\Providers\SupplierInvoiceAccruals\Provider as SupplierInvoiceAccrualsProvider;
+use Rwis\Fortie\Providers\SupplierInvoiceExternalURLConnections\Provider as SupplierInvoiceExternalURLConnectionsProvider;
+use Rwis\Fortie\Providers\SupplierInvoiceFileConnections\Provider as SupplierInvoiceFileConnectionsProvider;
+use Rwis\Fortie\Providers\SupplierInvoicePayments\Provider as SupplierInvoicePaymentsProvider;
+use Rwis\Fortie\Providers\SupplierInvoices\Provider as SupplierInvoicesProvider;
+use Rwis\Fortie\Providers\Suppliers\Provider as SuppliersProvider;
+use Rwis\Fortie\Providers\TaxReductions\Provider as TaxReductionsProvider;
+use Rwis\Fortie\Providers\TermsOfDeliveries\Provider as TermsOfDeliveriesProvider;
+use Rwis\Fortie\Providers\TermsOfPayments\Provider as TermsOfPaymentsProvider;
+use Rwis\Fortie\Providers\TrustedEmailSenders\Provider as TrustedEmailSendersProvider;
+use Rwis\Fortie\Providers\Units\Provider as UnitsProvider;
+use Rwis\Fortie\Providers\VoucherFileConnections\Provider as VoucherFileConnectionsProvider;
+use Rwis\Fortie\Providers\VoucherSeries\Provider as VoucherSeriesProvider;
+use Rwis\Fortie\Providers\Vouchers\Provider as VouchersProvider;
+use Rwis\Fortie\Providers\WayOfDeliveries\Provider as WayOfDeliveriesProvider;
 
 /**
  * Starting point for all interactions with the Fortnox API. After

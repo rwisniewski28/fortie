@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\SupplierInvoiceFileConnections;
+<?php namespace Rwis\Fortie\Providers\SupplierInvoiceFileConnections;
 
 /*
 
@@ -18,8 +18,8 @@
 
 */
 
-use Wetcat\Fortie\Providers\ProviderBase;
-use Wetcat\Fortie\FortieRequest;
+use Rwis\Fortie\Providers\ProviderBase;
+use Rwis\Fortie\FortieRequest;
 
 class Provider extends ProviderBase {
 

@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\Prices;
+<?php namespace Rwis\Fortie\Providers\Prices;
 
 /*
 
@@ -18,9 +18,9 @@
 
 */
 
-use Wetcat\Fortie\Exceptions\MissingRequiredAttributeException;
-use Wetcat\Fortie\Providers\ProviderBase;
-use Wetcat\Fortie\FortieRequest;
+use Rwis\Fortie\Exceptions\MissingRequiredAttributeException;
+use Rwis\Fortie\Providers\ProviderBase;
+use Rwis\Fortie\FortieRequest;
 
 class Provider extends ProviderBase {
 

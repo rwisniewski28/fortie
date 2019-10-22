@@ -1,8 +1,8 @@
 <?php
  
-use Wetcat\Fortie\Fortie;
+use Rwis\Fortie\Fortie;
 
-use Wetcat\Fortie\Accounts\Provider as AccountProvider;
+use Rwis\Fortie\Accounts\Provider as AccountProvider;
 
 use GuzzleHttp\Client as Guzzle;
 

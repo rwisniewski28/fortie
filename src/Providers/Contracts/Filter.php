@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\Contracts;
+<?php namespace Rwis\Fortie\Providers\Contracts;
 
 /*
 

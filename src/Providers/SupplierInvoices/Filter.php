@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Providers\SupplierInvoices;
+<?php namespace Rwis\Fortie\Providers\SupplierInvoices;
 
 /*
 

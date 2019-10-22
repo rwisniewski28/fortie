@@ -1,4 +1,4 @@
-<?php namespace Wetcat\Fortie\Exceptions;
+<?php namespace Rwis\Fortie\Exceptions;
 
 /*
 
