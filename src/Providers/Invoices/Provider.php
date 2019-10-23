@@ -219,12 +219,12 @@ class Provider extends ProviderBase {
 
   protected $required_create = [
     'CustomerNumber',
-    'InvoiceRows' 
+    'InvoiceRows'
   ];
 
 
   protected $required_update = [
-    'CustomerNumber', 
+    'CustomerNumber',
   ];
 
 
@@ -235,12 +235,12 @@ class Provider extends ProviderBase {
 
 
   /**
-   * Retrieves a list of invoices. The invoices are returned sorted by 
+   * Retrieves a list of invoices. The invoices are returned sorted by
    * document number with the lowest number appearing first.
    *
    * @return array
    */
-  public function all ($filter = null, $page = null)
+  public function all ($filter = null, $page = null, $options = null)
   {
     $req = new FortieRequest();
     $req->method('GET');
@@ -250,7 +250,13 @@ class Provider extends ProviderBase {
       $req->filter($filter);
     }
 
-    if (!is_null($page)) {  
+    if (!is_null($options)) {
+      foreach($options as $key => $value){
+        $req->param($key, $value);
+      }
+    }
+
+    if (!is_null($page)) {
       $req->param('page', $page);
     }
 
@@ -259,8 +265,8 @@ class Provider extends ProviderBase {
 
 
   /**
-   * Retrieves the details of an invoice. You need to supply the unique 
-   * document number that was returned when the invoice was created or 
+   * Retrieves the details of an invoice. You need to supply the unique
+   * document number that was returned when the invoice was created or
    * retrieved from the list of invoices.
    *
    * @param $id
@@ -277,16 +283,16 @@ class Provider extends ProviderBase {
 
 
   /**
-   * The created invoice will be returned if everything succeeded, if 
+   * The created invoice will be returned if everything succeeded, if
    * there was any problems an error will be returned.
    *
-   * You must specify a customer to create an invoice. It’s possible 
-   * to create an invoice without rows, although we encourage you to 
+   * You must specify a customer to create an invoice. It’s possible
+   * to create an invoice without rows, although we encourage you to
    * add them if you can.
    *
-   * Predefined values will be used for properties where it applies, 
-   * the values can be changed in the settings for the Fortnox account. 
-   * Predefined values will always be overwritten by values provided 
+   * Predefined values will be used for properties where it applies,
+   * the values can be changed in the settings for the Fortnox account.
+   * Predefined values will always be overwritten by values provided
    * through the API.
    *
    * @param array   $data
@@ -309,11 +315,11 @@ class Provider extends ProviderBase {
    * The updated invoice will be returned if everything succeeded, if
    * there was any problems an error will be returned.
    *
-   * You need to supply the document number of the invoice that you 
+   * You need to supply the document number of the invoice that you
    * want to update.
    *
    * Note that when updating rows you’ll need to provide all the rows
-   * of the invoice, only providing the updates will overwrite the 
+   * of the invoice, only providing the updates will overwrite the
    * current rows resulting in the old ones being removed.
    *
    * @param array   $params
@@ -359,8 +365,8 @@ class Provider extends ProviderBase {
 
 
   /**
-   * Creates a credit invoice from the provided invoice. The created 
-   * credit invoice will be referenced in the property 
+   * Creates a credit invoice from the provided invoice. The created
+   * credit invoice will be referenced in the property
    * CreditInvoiceReference.
    */
   public function credit ($id)
@@ -374,9 +380,9 @@ class Provider extends ProviderBase {
 
 
   /**
-   * Sends an e-mail to the customer with an attached PDF document 
-   * of the invoice. You can use the properties in the 
-   * EmailInformation to customize the e-mail message on each 
+   * Sends an e-mail to the customer with an attached PDF document
+   * of the invoice. You can use the properties in the
+   * EmailInformation to customize the e-mail message on each
    * invoice.
    */
   public function email ($id)
@@ -420,7 +426,7 @@ class Provider extends ProviderBase {
 
 
   /**
-   * This action is used to set the field Sent as true from an 
+   * This action is used to set the field Sent as true from an
    * external system without generating a PDF.
    */
   public function external ($id)
